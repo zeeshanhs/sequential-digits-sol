@@ -17,6 +17,5 @@ RUN ls -la /src
 
 WORKDIR /src
 
-RUN ls -la
 
 CMD ["python", "manage.py"]
