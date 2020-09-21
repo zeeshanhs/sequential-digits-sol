@@ -7,7 +7,7 @@ services:
 
 
 script:
-  - docker build -t src
+  - docker build -t src .
 
 notifications:
   email:
