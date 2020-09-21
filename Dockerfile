@@ -10,9 +10,14 @@ RUN pip install -r /requirements.txt
 
 
 RUN mkdir /src
-WORKDIR /src
+
 COPY ./src /src
 
+RUN ls -l /src
+
+WORKDIR /src
+
+CMD ["manage.py", "-flag"]
 
 RUN adduser -D user
 USER user

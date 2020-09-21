@@ -7,4 +7,4 @@ services:
 
 
 script:
-  - docker run src sh -c "python manage.py"
+  - docker run sh -c "python manage.py"
