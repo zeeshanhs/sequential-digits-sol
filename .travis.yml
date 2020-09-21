@@ -7,4 +7,11 @@ services:
 
 
 script:
-  - docker run sh -c "python manage.py"
+  - docker build -t src
+
+notifications:
+  email:
+    recipients:
+      - blue_tie@hotmail.com
+    on_success: never
+    on_failure: never

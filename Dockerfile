@@ -13,11 +13,8 @@ RUN mkdir /src
 
 COPY ./src /src
 
-RUN ls -l /src
+RUN ls -la /src
 
 WORKDIR /src
 
-CMD ["manage.py", "-flag"]
-
-RUN adduser -D user
-USER user
+RUN ls -la
